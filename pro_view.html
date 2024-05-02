@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          body{
+               font-family: Poppins;
+               line-height: 24px;
+          }
+          a{
+               text-decoration: none;
+          }
+          ul{
+               list-style: none;
+          }
+          section{
+               margin: 50px;
+          }
+          .section_title{
+               text-transform: uppercase;
+               letter-spacing: 10px;
+               text-align: center;
+               position: relative;
+               font-family: montserrat;
+               font-weight: 800;
+               margin-bottom: 80px;
+          }
+          .section_title:before{
+               content: '';
+               height: 5px;
+               width: 100px;
+               background-color: #000;
+               position: absolute;
+               bottom: -20px;
+               left: 50%;
+               transform: translateX(-50%);
+               
+          }
+          .main_product{
+               margin: 50px 0;
+               display: flex;
+               flex-wrap: wrap;
+               gap: 20px;
+               justify-content: space-between;
+          }
+          .single_pro{
+               /* border: 2px brown solid; */
+               /* height: 400px; */
+               width: calc(25% - 20px);
+
+          }
+          img{
+               height: 100%;
+               width: 100%;
+               object-fit: cover;
+          }
+          .pro_img{
+               height: 350px;
+               max-height: 350px;
+               overflow: hidden;
+               position: relative;
+               display: block;
+          }
+          .product_img{
+               height: inherit;
+          }
+          .pro_details{
+               padding: 10px 0;
+          }
+          .pro_details .pro_name{
+               font-weight: 600;
+               margin-bottom: 5px;
+               color: #000;
+          }
+          .pro_details .pro_name:hover{
+               color: brown;
+          }
+          .pro_details .pro_price{
+               color: #888;
+          }
+          .hvr_img{
+               position: absolute;
+               top: 0;
+               left: 0;
+               height: 100%;
+               width: 100%;
+               opacity: 0;
+               transition: transform 2s linear, opacity .5s;
+          }
+          .single_pro:hover .pro_img>.product_img>.hvr_img{
+               opacity: 1;
+               transform: scale(1.2);
+          }
+          .pro_layer{
+               position: absolute;
+               top: 0;
+               left: 0;
+               height: 100%;
+               width: 100%;
+               background-color: rgba(0, 0, 0, 0.2);
+               display: block;
+               opacity: 0;
+               transition: .3s;
+
+          }
+          .pro_img:hover .pro_layer{
+               opacity: 1;
+          }
+          .pro_option{
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -130%);
+               transition: .3s;
+               opacity: 0;
+          }
+          .pro_option li a{
+               display: block;
+               background-color: #fff;
+               color: #000;
+               margin: 10px;
+               padding: 8px 15px;
+               width: 100%;
+               text-align: center;
+               border-radius: 30px;
+               transition: .2s;
+          }
+          .pro_option li a:hover{
+               background-color: #000;
+               color: #fff;
+          }
+          .pro_img:hover .pro_option{
+               transform: translate(-50%, -50%);
+               opacity: 1;
+          }
+          
+     </style>
+
+</head>
+<body>
+     
+     <section>
+          <h1 class="section_title">featured collection</h1>
+          <div class="main_product">
+               <div class="single_pro">
+                    <div class="pro_img">
+                         <div class="product_img">
+                              <img src="image/pro_1.webp" alt="" class="dis_img">
+                              <img src="image/pro_1-1.webp" alt="" class="hvr_img">
+                         </div>
+                         <a href="#" class="pro_layer"></a>
+                         <ul class="pro_option">
+                              <li><a href="#">Quick View</a></li>
+                              <li><a href="#">Quick Shop</a></li>
+                         </ul>                         
+                    </div>
+                    <div class="pro_details">
+                         <a href="#" class="pro_name">Analogue Resin Strap</a>
+                         <p class="pro_price">$30.00</p>
+                    </div>
+               </div>
+               <div class="single_pro">
+                    <div class="pro_img">
+                         <div class="product_img">
+                              <img src="image/pro_1.webp" alt="" class="dis_img">
+                              <img src="image/pro_1-1.webp" alt="" class="hvr_img">
+                         </div>
+                         <a href="#" class="pro_layer"></a>
+                         <ul class="pro_option">
+                              <li><a href="#">Quick View</a></li>
+                              <li><a href="#">Quick Shop</a></li>
+                         </ul>                         
+                    </div>
+                    <div class="pro_details">
+                         <a href="#" class="pro_name">Analogue Resin Strap</a>
+                         <p class="pro_price">$30.00</p>
+                    </div>
+               </div>
+               <div class="single_pro">
+                    <div class="pro_img">
+                         <div class="product_img">
+                              <img src="image/pro_1.webp" alt="" class="dis_img">
+                              <img src="image/pro_1-1.webp" alt="" class="hvr_img">
+                         </div>
+                         <a href="#" class="pro_layer"></a>
+                         <ul class="pro_option">
+                              <li><a href="#">Quick View</a></li>
+                              <li><a href="#">Quick Shop</a></li>
+                         </ul>                         
+                    </div>
+                    <div class="pro_details">
+                         <a href="#" class="pro_name">Analogue Resin Strap</a>
+                         <p class="pro_price">$30.00</p>
+                    </div>
+               </div>
+               <div class="single_pro">
+                    <div class="pro_img">
+                         <div class="product_img">
+                              <img src="image/pro_1.webp" alt="" class="dis_img">
+                              <img src="image/pro_1-1.webp" alt="" class="hvr_img">
+                         </div>
+                         <a href="#" class="pro_layer"></a>
+                         <ul class="pro_option">
+                              <li><a href="#">Quick View</a></li>
+                              <li><a href="#">Quick Shop</a></li>
+                         </ul>                         
+                    </div>
+                    <div class="pro_details">
+                         <a href="#" class="pro_name">Analogue Resin Strap</a>
+                         <p class="pro_price">$30.00</p>
+                    </div>
+               </div>
+               <div class="single_pro">
+                    <div class="pro_img">
+                         <div class="product_img">
+                              <img src="image/pro_1.webp" alt="" class="dis_img">
+                              <img src="image/pro_1-1.webp" alt="" class="hvr_img">
+                         </div>
+                         <a href="#" class="pro_layer"></a>
+                         <ul class="pro_option">
+                              <li><a href="#">Quick View</a></li>
+                              <li><a href="#">Quick Shop</a></li>
+                         </ul>                         
+                    </div>
+                    <div class="pro_details">
+                         <a href="#" class="pro_name">Analogue Resin Strap</a>
+                         <p class="pro_price">$30.00</p>
+                    </div>
+               </div>
+               <div class="single_pro">
+                    <div class="pro_img">
+                         <div class="product_img">
+                              <img src="image/pro_1.webp" alt="" class="dis_img">
+                              <img src="image/pro_1-1.webp" alt="" class="hvr_img">
+                         </div>
+                         <a href="#" class="pro_layer"></a>
+                         <ul class="pro_option">
+                              <li><a href="#">Quick View</a></li>
+                              <li><a href="#">Quick Shop</a></li>
+                         </ul>                         
+                    </div>
+                    <div class="pro_details">
+                         <a href="#" class="pro_name">Analogue Resin Strap</a>
+                         <p class="pro_price">$30.00</p>
+                    </div>
+               </div>
+               <div class="single_pro">
+                    <div class="pro_img">
+                         <div class="product_img">
+                              <img src="image/pro_1.webp" alt="" class="dis_img">
+                              <img src="image/pro_1-1.webp" alt="" class="hvr_img">
+                         </div>
+                         <a href="#" class="pro_layer"></a>
+                         <ul class="pro_option">
+                              <li><a href="#">Quick View</a></li>
+                              <li><a href="#">Quick Shop</a></li>
+                         </ul>                         
+                    </div>
+                    <div class="pro_details">
+                         <a href="#" class="pro_name">Analogue Resin Strap</a>
+                         <p class="pro_price">$30.00</p>
+                    </div>
+               </div>
+               <div class="single_pro">
+                    <div class="pro_img">
+                         <div class="product_img">
+                              <img src="image/pro_1.webp" alt="" class="dis_img">
+                              <img src="image/pro_1-1.webp" alt="" class="hvr_img">
+                         </div>
+                         <a href="#" class="pro_layer"></a>
+                         <ul class="pro_option">
+                              <li><a href="#">Quick View</a></li>
+                              <li><a href="#">Quick Shop</a></li>
+                         </ul>                         
+                    </div>
+                    <div class="pro_details">
+                         <a href="#" class="pro_name">Analogue Resin Strap</a>
+                         <p class="pro_price">$30.00</p>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+</body>
+</html>
